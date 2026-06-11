@@ -1,0 +1,18 @@
+const champions = [
+  "Ahri",
+  "Akali",
+  "Ashe",
+  "Darius",
+  "Ezreal",
+  "Garen",
+  "Jinx",
+  "Katarina",
+  "Lux",
+  "Sett",
+  "Thresh",
+  "Vayne",
+  "Veigar",
+  "Viego",
+  "Yasuo",
+  "Yone",
+];
