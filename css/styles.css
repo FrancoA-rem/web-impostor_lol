@@ -182,6 +182,13 @@ h3 {
   opacity: 0.7;
 }
 
+.impostor-role {
+  color: #dc143c;
+  text-shadow:
+    0 0 10px rgba(220, 20, 60, 0.6),
+    0 0 20px rgba(220, 20, 60, 0.3);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

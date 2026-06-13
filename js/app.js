@@ -130,7 +130,7 @@ createGameButton.addEventListener("click", () => {
                     ${
                       currentPlayer.isImpostor
                         ? `
-                                <h1>
+                                <h1 class="impostor-role">
                                     SOS EL IMPOSTOR
                                 </h1>
                             `
