@@ -82,6 +82,19 @@ body {
   animation: fadeIn 0.3s ease;
 }
 
+#home-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#home-screen p {
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
 #setup-screen,
 #game-screen {
   width: 100%;
@@ -116,6 +129,8 @@ button {
   border-radius: 12px;
 
   padding: 1rem;
+
+  -moz-appearance: textfield;
 }
 
 input,

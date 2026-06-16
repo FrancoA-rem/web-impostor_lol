@@ -1,9 +1,23 @@
 const createGameButton = document.getElementById("create-game");
 const playersInput = document.getElementById("players");
 const playersContainer = document.getElementById("players-container");
-
+const backHomeButton = document.getElementById("back-home");
 const setupScreen = document.getElementById("setup-screen");
 const gameScreen = document.getElementById("game-screen");
+const homeScreen = document.getElementById("home-screen");
+const playLocalButton = document.getElementById("play-local");
+
+playLocalButton.addEventListener("click", () => {
+  homeScreen.style.display = "none";
+  setupScreen.style.display = "block";
+});
+
+backHomeButton.addEventListener("click", () => {
+  setupScreen.style.display = "none";
+  homeScreen.style.display = "block";
+
+  playersContainer.innerHTML = "";
+});
 
 createGameButton.addEventListener("click", () => {
   const totalPlayers = Number(playersInput.value);
@@ -74,21 +88,22 @@ createGameButton.addEventListener("click", () => {
     function showPlayerScreen() {
       if (currentPlayerIndex >= roles.length) {
         gameScreen.innerHTML = `
-        <h2>
-            Todos los jugadores ya vieron su rol
-        </h2>
+    <h2>
+      Todos los jugadores ya vieron su rol
+    </h2>
 
-        <button id="finish-game">
-            Finalizar ronda
-        </button>
-    `;
+    <button id="finish-game">
+      Finalizar ronda
+    </button>
+  `;
 
         const finishGameButton = document.getElementById("finish-game");
 
         finishGameButton.addEventListener("click", () => {
           gameScreen.innerHTML = "";
 
-          setupScreen.style.display = "block";
+          setupScreen.style.display = "none";
+          homeScreen.style.display = "block";
 
           playersContainer.innerHTML = "";
         });

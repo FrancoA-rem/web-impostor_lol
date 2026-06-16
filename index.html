@@ -15,7 +15,17 @@
       <p>Descubre quien es el <span>impostor</span></p>
     </header>
     <main class="main">
-      <div id="setup-screen">
+      <div id="home-screen">
+        <h2>Modo Local</h2>
+
+        <p>
+          Todos los jugadores utilizan el mismo dispositivo. Cada participante
+          verá su rol en secreto antes de que comience la ronda.
+        </p>
+
+        <button id="play-local">Jugar modo local</button>
+      </div>
+      <div id="setup-screen" style="display: none">
         <div class="form-group">
           <label for="players">Cantidad de jugadores</label>
           <input type="number" id="players" min="3" max="20" value="4" />
@@ -27,6 +37,7 @@
         </div>
 
         <button id="create-game">Continuar</button>
+        <button id="back-home">Volver</button>
         <div id="players-container"></div>
       </div>
       <div id="game-screen"></div>
