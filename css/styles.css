@@ -93,6 +93,7 @@ body {
   font-size: 0.8rem;
   line-height: 1.5;
   opacity: 0.9;
+  padding: 1rem;
 }
 
 #setup-screen,
@@ -129,6 +130,8 @@ button {
   border-radius: 12px;
 
   padding: 1rem;
+
+  margin: 0.4rem 0;
 
   -moz-appearance: textfield;
 }
@@ -173,6 +176,11 @@ button:hover {
 
 button:active {
   transform: translateY(0);
+}
+
+.vote-options {
+  display: grid;
+  gap: 0.5rem;
 }
 
 h1,
